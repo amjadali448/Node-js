@@ -1,0 +1,42 @@
+const { isUtf8 } = require('buffer');
+const { error } = require('console');
+const fs = require('fs');
+// fs.mkdir('txt',(error)=>{
+//     if (error)
+//     {
+//         console.log(error);
+//     }
+//     else{
+//         fs.writeFile('./txt/example.txt','123',(error)=>{
+//             if (error)
+//             {
+//                 console.log(error);
+//             }
+//             else{
+//                 console.log("file Successfully created");
+//             }
+//         });
+//     }
+// });
+
+// fs.unlink('./txt/example.txt',(error)=>{
+//     if (error)
+//     {
+//         console.log("Yesssss!!!!!!!!! /n")
+//         console.log (error);
+//     }
+//     else
+//     {
+//         console.log("File Successfully Deleted")
+//     }
+// });
+
+fs.rmdir('txt',(error)=>{
+    if (error)
+    {
+        console.log (error);
+    }
+    else{
+        console.log("Folder successfully Deeleted");
+    }
+});
